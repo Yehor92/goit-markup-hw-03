@@ -49,9 +49,6 @@ img {
   width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
-
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
 
 /* Header */
@@ -113,6 +110,7 @@ img {
   color: var(--color-ocean);
 }
 .header-address {
+  margin-left: auto;
   font-style: normal;
 }
 .address-list {
@@ -311,6 +309,7 @@ img {
 .text-footer {
   font-size: 16px;
   line-height: 24px;
+  max-width: 264px;
   letter-spacing: 0.02em;
   color: var(--color-cloud);
 }
@@ -376,16 +375,15 @@ img {
   color: var(--color-ocean);
 }
 .address {
+  margin-left: auto;
   font-style: normal;
 }
 .items {
   list-style: none;
-}
-
-.items-add {
   display: flex;
   gap: 40px;
 }
+
 .link-list-item {
   font-size: 16px;
   line-height: 1.5;
@@ -401,14 +399,25 @@ img {
 
 /* Main */
 
+.section {
+  padding: 96px 0 120px;
+}
+
 .list-filters {
   list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
 }
 .button {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
+  padding: 12px 24px;
+  border: 1px solid var(--color-cornflower);
   line-height: 1.5;
+  border-radius: 4px;
   letter-spacing: 0.04em;
   color: var(--color-iris);
   background-color: var(--color-cloud);
@@ -416,11 +425,19 @@ img {
 }
 .button:hover,
 .button:focus {
+  border: 1px solid transparent;
   color: var(--color-white);
   background-color: var(--color-ocean);
 }
 .list-app {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
   list-style: none;
+}
+.item-app {
+  width: calc((100% - 48px) / 3);
 }
 .link-p {
   text-decoration: none;
@@ -438,9 +455,16 @@ img {
   letter-spacing: 0.02em;
   color: var(--color-slate);
 }
+.app {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin-bottom: 8px;
+}
 /* Footer */
 
 .footer-section {
+  padding: 100px 0;
   background-color: var(--color-grey);
 }
 .link-logo-footer {
@@ -448,6 +472,8 @@ img {
   font-size: 18px;
   line-height: 1.17;
   font-weight: 800;
+  display: inline-block;
+  margin-bottom: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
@@ -465,6 +491,7 @@ img {
 .text-footer-portfolio {
   font-size: 16px;
   line-height: 24px;
+  max-width: 264px;
   letter-spacing: 0.02em;
   color: var(--color-cloud);
 }
