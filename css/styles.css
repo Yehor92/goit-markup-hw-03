@@ -26,6 +26,7 @@ h3,
 h4,
 h5,
 h6,
+ul,
 p {
   margin: 0;
 }
@@ -139,15 +140,18 @@ img {
 /* hero-section */
 
 .hero-section {
+  padding: 188px 0;
   background-color: var(--color-grey);
 }
 .title-hero {
   font-size: 56px;
+  max-width: 496px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
 }
+
 .btn {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -158,19 +162,36 @@ img {
   color: #ffffff;
   cursor: pointer;
 }
+.btn-flex {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+}
 .btn:hover,
 .btn:focus {
   background: var(--color-ocean);
 }
 
 /* Why we */
-
+.why-we {
+  padding: 120px 0;
+}
 .list-section {
   list-style: none;
+}
+.list-section-flex {
+  display: flex;
+  gap: 24px;
+}
+.list-item {
+  width: calc((100% - 72px) / 4);
 }
 .subtitle {
   font-weight: 500;
   font-size: 20px;
+  margin-bottom: 8px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--color-navy-blue);
@@ -184,25 +205,40 @@ img {
 
 /* Section-img */
 
+.section-img {
+  padding-bottom: 120px;
+}
+
 .title-section {
   font-size: 36px;
+  margin-bottom: 72px;
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--color-navy-blue);
 }
+
 .list-img {
   list-style: none;
+}
+.list-img-flex {
+  display: flex;
+  gap: 24px;
+}
+.item-img {
+  width: calc((100% - 48px) / 3);
 }
 
 /* Team */
 
 .team {
+  padding: 120px 0;
   background-color: var(--color-cloud);
 }
 .title-team {
   font-size: 36px;
+  margin-bottom: 72px;
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
@@ -212,8 +248,24 @@ img {
 .list-team {
   list-style: none;
 }
+.list-team-flex {
+  display: flex;
+  gap: 24px;
+}
 .card {
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
   background-color: var(--color-white);
+}
+.card-team {
+  padding: 32px 16px;
+}
+.name-card {
+  text-align: center;
+  margin-bottom: 8px;
+}
+.post-card {
+  text-align: center;
 }
 .name {
   font-weight: 500;
@@ -232,6 +284,7 @@ img {
 /* Footer */
 
 .footer {
+  padding: 100px 0;
   background-color: var(--color-navy-blue);
 }
 .logo {
@@ -239,6 +292,8 @@ img {
   font-size: 18px;
   line-height: 1.17;
   font-weight: 800;
+  display: inline-block;
+  margin-bottom: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
