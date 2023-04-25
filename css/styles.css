@@ -98,7 +98,6 @@ img {
 .link-item {
   font-weight: 500;
   font-size: 16px;
-  padding: 24px 0;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -144,6 +143,8 @@ img {
 .title-hero {
   font-size: 56px;
   max-width: 496px;
+  padding: 48px 0;
+  margin: 0 auto;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
@@ -154,6 +155,7 @@ img {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
+  margin: 0 auto;
   line-height: 1.5;
   letter-spacing: 0.04em;
   background: #4d5ae5;
