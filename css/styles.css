@@ -370,6 +370,7 @@ img {
   font-weight: 500;
   font-size: 16px;
   padding: 24px 0;
+  display: block;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -392,6 +393,8 @@ img {
 
 .link-list-item {
   font-size: 16px;
+  padding: 24px 0;
+  display: block;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-decoration: none;
